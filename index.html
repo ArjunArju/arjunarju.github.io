@@ -15,13 +15,22 @@
   <div class="row">
 
   <div class="col-sm-8">
-	  <h3><span style="font-size:50px;color:#ffffff;text-shadow: 2px 2px 2px black;">I’m</span></h3><h1><span style="color:#14B97D;font-weight:bold;text-shadow: 2px 2px 2px #ffffff;font-size:86px;">ARJUN</span></h1>
+	  <h3><span style="font-size:50px;color:#ffffff;text-shadow: 2px 2px 2px black;">I’m</span></h3><h1><span style="color:#0000FF;font-weight:bold;text-shadow: 2px 2px 2px #ffffff;font-size:86px;">ARJUN</span></h1>
 
   </div>  
 <div class="col-sm-2"></div>
 
 <div class="col-sm-2"></div>
-
+<span class="slidecnt1" style="font-weight: bold; font-style: italic; font-size: 24px;">Roles and Responsibilities</span>
+ <br/>
+	    <br/>
+<br/>
+    <div class="verticalFlip" style="font-size: 30px;">
+      <span class="slidecnt">Develop new user-facing featurest </span>
+      <span class="slidecnt">Build reusable code and libraries for future</span>
+      <span class="slidecnt">Ensure the technical feasibility of UI designs</span>
+      <span class="slidecnt">Assure that all user input is validated, submitting to back-end</span>
+</div>
   </div>
 </div>
 
@@ -32,6 +41,117 @@
 		body {
   background-image: url("https://arjunarju.github.io/Arjunramesh/IMG_3507.JPG");
   background-size: 100% auto;
+}
+		
+		
+		img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+	/*Wrapper*/
+.wrapper{
+    background-color: #f5f5f5;
+    font-family: 'Calibri', sans-serif;
+    margin: 100px auto;
+    padding: 40px 40px;
+    position: relative;
+    width: 70%;
+}
+/*Vertical Sliding*/
+.slidingVertical{
+	display: inline;
+	text-indent: 8px;
+}
+.slidingVertical span{
+	animation: topToBottom 10s linear infinite 0s;
+	-ms-animation: topToBottom 10s linear infinite 0s;
+	-webkit-animation: topToBottom 10s linear infinite 0s;
+	color: #ffffff !important;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.slidingVertical span:nth-child(2){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+/*Vertical Flip*/
+.verticalFlip{
+	display: inline;
+	text-indent: 8px;
+}
+.verticalFlip span{
+	animation: vertical 10s linear infinite 0s;
+	-ms-animation: vertical 10s linear infinite 0s;
+	-webkit-animation: vertical 10s linear infinite 0s;
+	color: teal;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.verticalFlip span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.verticalFlip span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.verticalFlip span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.verticalFlip span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+/*Vertical Flip Animation*/
+@-moz-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: rotateX(180deg); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0;}
+}
+@-webkit-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: rotateX(180deg); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: rotateX(180deg); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
 }
 	</style>
 	
