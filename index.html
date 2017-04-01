@@ -13,10 +13,32 @@
 
 <body>
 <div class="jumbotron text-center" >
- <h1 style="color: white; font-weight: bold; text-shadow: 2px 2px 2px black;">ARJUN RAMESH </h1>
-  <p style="color: gray;">(BELIVE)</p>
+ <h1 style="color:#03C; font-weight: bold; text-shadow: 2px 2px 2px black;">ARJUN RAMESH </h1>
+  <p style="color:#ffffff;">(BELIVE)</p>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+     <span class="slidecnt1" style="font-weight: bold; font-style: italic; font-size: 40px;color: white;">I am Pertty Good at,</span>
+ <br/>
+  <br/>
+<div class="verticalFlip" style="font-size: 50px;">
+      <span class="slidecnt">MODLING</span>
+      <span class="slidecnt">ATHELITICS</span>
+      <span class="slidecnt">BIKE RACING</span>
+      <span class="slidecnt">DANCING</span>
+</div>
+<br/>
+<br/>
+<br/>
+<a href="https://arjunarju.github.io/portfolio.html"><p style="background: black none repeat scroll 0% 0%; text-align: center; color: rgb(255, 255, 255); font-size: 28px; padding: 1%; border-radius: 26px; opacity: 0.56;">View My Portfolio</p></a>
 
+    </div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+    
+  </div>
+</div>
 
 	
 
@@ -29,17 +51,17 @@
 		<ul class="sticky">
 			<li>
 				<img width="32" height="32" title="" alt="" src="https://raghulbakthavachalam.github.io/images/home.png" />
-				<a href="#"><p>HOME</p></a>
+				<a href="https://arjunarju.github.io/"><p>HOME</p></a>
 			</li>
 			
 			<li>
 				<img width="32" height="32" title="" alt="" src="https://raghulbakthavachalam.github.io/images/Ampeross-Qetto-2-Gallery.ico" />
-				<a href="#"><p>GALLERY</p></a>
+				<a href="https://arjunarju.github.io/portfolio.html"><p>GALLERY</p></a>
 			</li>
 			
 			<li>
 			        <img width="32" height="32" title="" alt="" src="https://raghulbakthavachalam.github.io/images/contact.ico" />
-				<a href="#"><p>CONTACT</p></a>
+				<a href="https://arjunarju.github.io/contact.html"><p>CONTACT</p></a>
 			</li>
 		</ul>
 </div> 
@@ -50,6 +72,12 @@
 </html>
 
 <style>
+
+.slidecnt {
+  color: purple !important;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px white;
+}
 
 	.sticky-container{
 		/*background-color: #333;*/
@@ -112,14 +140,120 @@
 
 
 body{
-      height: 200px;
-    background: #086CFE; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#086CFE, #00BEFD); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#086CFE, #00BEFD); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#086CFE, #00BEFD); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#086CFE, #00BEFD); /* Standard syntax (must be last)
+      background-image:url(https://arjunarju.github.io/Arjunramesh/DSC_0107.JPG);
+	background-size:100%;
   
   }
+  
+  img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+	/*Wrapper*/
+.wrapper{
+    background-color: #f5f5f5;
+    font-family: 'Calibri', sans-serif;
+    margin: 100px auto;
+    padding: 40px 40px;
+    position: relative;
+    width: 70%;
+}
+/*Vertical Sliding*/
+.slidingVertical{
+	display: inline;
+	text-indent: 8px;
+}
+.slidingVertical span{
+	animation: topToBottom 10s linear infinite 0s;
+	-ms-animation: topToBottom 10s linear infinite 0s;
+	-webkit-animation: topToBottom 10s linear infinite 0s;
+	color: #ffffff !important;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.slidingVertical span:nth-child(2){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+/*Vertical Flip*/
+.verticalFlip{
+	display: inline;
+	text-indent: 8px;
+}
+.verticalFlip span{
+	animation: vertical 10s linear infinite 0s;
+	-ms-animation: vertical 10s linear infinite 0s;
+	-webkit-animation: vertical 10s linear infinite 0s;
+	color: teal;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.verticalFlip span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.verticalFlip span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.verticalFlip span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.verticalFlip span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+/*Vertical Flip Animation*/
+@-moz-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: rotateX(180deg); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0;}
+}
+@-webkit-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: rotateX(180deg); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: rotateX(180deg); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
        
 
 </style>
