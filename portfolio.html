@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Portfolio</title>
+		<meta name="description" content="Blueprint: Background Slideshow" />
+		<meta name="keywords" content="blueprint, background image slideshow, fullscreen slideshow, jquery, fullscreen image, web development" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
+        
+        <script>
+$(document).ready(function() {
+    var $lightbox = $('#lightbox');
+    
+    $('[data-target="#lightbox"]').on('click', function(event) {
+        var $img = $(this).find('img'), 
+            src = $img.attr('src'),
+            alt = $img.attr('alt'),
+            css = {
+                'maxWidth': $(window).width() - 100,
+                'maxHeight': $(window).height() - 100
+            };
+    
+        $lightbox.find('.close').addClass('hidden');
+        $lightbox.find('img').attr('src', src);
+        $lightbox.find('img').attr('alt', alt);
+        $lightbox.find('img').css(css);
+    });
+    
+    $lightbox.on('shown.bs.modal', function (e) {
+        var $img = $lightbox.find('img');
+            
+        $lightbox.find('.modal-dialog').css({'width': $img.width()});
+        $lightbox.find('.close').removeClass('hidden');
+    });
+});
+		</script>
+        
+          </head>
+     
+      <body>
+      
+      <div class="bar">  
+     
+            <button id="demo_menu-lower-left" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" data-upgraded=",MaterialButton">  
+               <i class="material-icons">apps</i>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+               for="demo_menu-lower-left">
+               <li class="mdl-menu__item"><a href="https://arjunarju.github.io/"><img src="https://arjunarju.github.io/Arjunramesh/home.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Home</b></li></a><br>
+               
+               <li class="mdl-menu__item"><a href="https://arjunarju.github.io/about.html"><img src="https://arjunarju.github.io/Arjunramesh/about.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">About</b></li></a><br>
+                <li class="mdl-menu__item"><a href="https://arjunarju.github.io/portfolio.html"><img src="https://arjunarju.github.io/Arjunramesh/gaarjun.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;color: gold;text-shadow: 2px 2px 2px black;">Portfolio</b></li></a><br>
+                 <li class="mdl-menu__item"><a href="https://arjunarju.github.io/contact.html"><img src="https://arjunarju.github.io/Arjunramesh/arjucon.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Contact</b></li></a>
+                   
+            </ul></div>
+             <br>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <header class="clearfix">
+				<center><h1 style="font-size: 50px; font-weight: bold; color: white; text-shadow: 2px 2px 2px black;font-family: 'Dancing Script', cursive;">ARJUN RAMESH</h1><br/></center>
+                </header>
+                <center><img src="https://arjunarju.github.io/Arjunramesh/arjunblack.jpg" style="width: 45%;box-shadow: 2px 2px 21px 2px gray;border-radius: 10px;"></center>
+    </div>
+   
+    <div class="col-sm-8">
+          <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/1.jpg" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/2.jpg" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/21.jpg" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/22.jpg" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/5.jpg" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/17.jpg" alt="...">
+        </a>
+    </div>
+    
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/15.jpg" alt="...">
+        </a>
+    </div>
+    
+     <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/23.jpg" alt="...">
+        </a>
+    </div>
+    
+      <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/9.jpg" alt="...">
+        </a>
+    </div>
+    
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/13.jpg" alt="...">
+        </a>
+    </div>
+    
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/24.jpg" alt="...">
+        </a>
+    </div>
+    
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://arjunarju.github.io/Arjunramesh/11.jpg" alt="...">
+        </a>
+    </div>
+    
+</div>
+
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+
+  <style>
+  
+  body {
+  background-image: url("https://arjunarju.github.io/Arjunramesh/planet-1702788_1920.jpg");
+}
+
+
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
+}
+		 
+		 .bar {
+         box-sizing: border-box;
+         
+         color: white;
+         width: 100%;
+         height: 60px;
+         padding: 16px;
+      }
+
+		 </style>
