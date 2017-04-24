@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Gallery</title>
+		<meta name="description" content="Blueprint: Background Slideshow" />
+		<meta name="keywords" content="blueprint, background image slideshow, fullscreen slideshow, jquery, fullscreen image, web development" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
+        
+        <script>
+		$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+
+});
+		</script>
+        
+        </head>
+       
+       <body>
+        <div class="bar">  
+     
+            <button id="demo_menu-lower-left" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" data-upgraded=",MaterialButton">  
+               <i class="material-icons">apps</i>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+               for="demo_menu-lower-left">
+               <li class="mdl-menu__item"><a href="https://arjunarju.github.io/"><img src="https://arjunarju.github.io/Arjunramesh/home.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Home</b></li></a><br>
+               
+               <li class="mdl-menu__item"><a href="https://arjunarju.github.io/about.html"><img src="https://arjunarju.github.io/Arjunramesh/about.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">About</b></li></a><br>
+                <li class="mdl-menu__item"><a href="https://arjunarju.github.io/portfolio.html"><img src="https://arjunarju.github.io/Arjunramesh/gaarjun.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;color: gold;text-shadow: 2px 2px 2px black;">Portfolio</b></li></a><br>
+                 <li class="mdl-menu__item"><a href="https://arjunarju.github.io/contact.html"><img src="https://arjunarju.github.io/Arjunramesh/arjucon.jpg"> &nbsp; <b style="font-family: 'Satisfy', cursive;font-size:22px;">Contact</b></li></a>
+                   
+            </ul></div>
+            
+        <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">View My Performance</h1>
+        </div>
+
+        <div align="center" style="font-family:font-family:font-family: 'Satisfy', cursive;">
+            <button class="btn btn-default filter-button active" data-filter="all" style="font-family:font-family:font-family: 'Satisfy', cursive;">All</button>
+            <button class="btn btn-default filter-button" data-filter="modeling">Modeling</button>
+            <button class="btn btn-default filter-button" data-filter="dancing">Dancing</button>
+            <button class="btn btn-default filter-button" data-filter="running">Running</button>
+            
+        </div>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter running">
+                <img src="https://arjunarju.github.io/Arjunramesh/Running1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter running">
+                <img src="https://arjunarju.github.io/Arjunramesh/Running2.jpg" class="img-responsive">
+            </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter modeling">
+                <img src="https://arjunarju.github.io/Arjunramesh/Running3.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter modeling">
+                <img src="https://arjunarju.github.io/Arjunramesh/Running4.jpg" class="img-responsive">
+            </div>
+            
+             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter modeling">
+                <img src="https://arjunarju.github.io/Arjunramesh/Running5.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter running">
+                <img src="https://arjunarju.github.io/Arjunramesh/Running6.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter running">
+                <img src="https://arjunarju.github.io/Arjunramesh/Running7.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter running">
+                <img src="https://arjunarju.github.io/Arjunramesh/Running8.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dancing">
+                <video width="400" controls>
+  <source src="https://arjunarju.github.io/Arjunramesh/Video2.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  </video></div>
+  
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dancing">
+                <video width="400" controls>
+  <source src="https://arjunarju.github.io/Arjunramesh/Video1.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  </video></div>
+            
+
+        </div>
+    </div>
+</section>
+
+       </body>
+       
+       
+       <style>
+	   
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+	
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.filter-button.active
+{
+    background-color: #42B32F;
+    color: white;
+}
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+ .bar {
+         box-sizing: border-box;
+         
+         color: white;
+         width: 100%;
+         height: 60px;
+         padding: 16px;
+      }
+video {
+    width: 100%;
+    height: 30%;
+}
+
+body{
+	
+}
+	   </style>
